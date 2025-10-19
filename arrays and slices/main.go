@@ -57,7 +57,7 @@ func slices() {
 	b := []int{0, 1, 2, 3, 4, 5, 6}
 	showType(b)
 	i := 3
-	b = append(b[:i-1], b[i:]...)
+	b = append(b[:i], b[i+1:]...)
 	showType(b)
 }
 

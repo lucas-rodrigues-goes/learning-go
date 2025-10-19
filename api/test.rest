@@ -1,0 +1,24 @@
+### GET /books
+GET http://localhost:8080/books/1
+
+### POST /books
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+    "id": "4",
+    "title": "The Witcher",
+    "author": "Unknown",
+    "quantity": 1
+}
+
+### UPDATE /books
+PATCH http://localhost:8080/books/4
+Content-Type: application/json
+
+{
+    "author": "Geralt of Rivia"
+}
+
+### DELETE /books
+DELETE http://localhost:8080/books/4
